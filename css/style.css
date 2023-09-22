@@ -55,7 +55,7 @@ a {
 ::-webkit-scrollbar-track {
     background: var(--bg-dark-blue);
 }
-
+    zzzxxc
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
 }
@@ -184,7 +184,7 @@ button {
     margin: 0 10px;
 }
 
-.header_wrapper .nav-item .nav-link {
+.header_wrapper .nav-item .nav-link {   
     position: relative;
     font-size: 16px;
     font-weight: 500;
@@ -309,6 +309,7 @@ button {
     color: var(--text-gray);
 }
 
+ 
 /* 4 Services */
 .skills_wrapper .card {
     background-color: var(--bg-dark-blue);
@@ -330,8 +331,15 @@ button {
     border: 1px solid var(--bg-white);
     cursor: pointer;
     box-shadow: 0 0 16px 4px var(--bg-dark-blue); 
+    
 }
 
+.card:hover{
+    transform: scale(1.2);
+    z-index: 1;
+    
+
+}
 .portfolio_wrapper .card span {
     transition: background-position 4s ease-in-out 0s;
     width: 100%;
@@ -343,6 +351,50 @@ button {
 .portfolio_wrapper .card:hover span {
     background-position: bottom center;
 }
+
+/* Projects */
+/* Add this CSS to style the More Info button */
+.portfolio-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* CSS for the "More Info" button */
+.more-info {
+    position: absolute;
+    top: 50%;
+    left: 25%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid #0c3af3; /* Customize the border style */
+    padding: 10px 20px;
+    color: #da2727;
+    text-decoration: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* CSS for the "Code" button */
+.view-code {
+    position: absolute;
+    top: 50%;
+    left: 75%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid #0c3af3; /* Customize the border style */
+    padding: 10px 20px;
+    color: #da2727;
+    text-decoration: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the buttons on hover */
+.portfolio-image:hover .portfolio-button {
+    opacity: 1;
+}
+
 
 /* 6 Contact */
 .contact_wrapper .form-control,
@@ -478,21 +530,7 @@ button {
         line-height: 24px;
     }
 
-    /* About */
-    .about_wrapper ul.nav-pills{
-        width:100%;
-        margin:auto;
-        border:0;
-    }
-    .about_wrapper ul li .nav-link {
-        font-size: 13px;
-    } 
-
-    /* portfolio */
-    .portfolio_wrapper .card {
-        min-height: 500px;
-    }
+ 
 } 
 
         
-      
